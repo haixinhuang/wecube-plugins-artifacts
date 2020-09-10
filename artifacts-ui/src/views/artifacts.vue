@@ -21,7 +21,7 @@
     </Col>
     <Col span="17" offset="1">
       <Card v-if="guid" class="artifact-management-top-card">
-        <Button type="info" ghost icon="ios-cloud-upload-outline" @click="getHeaders">
+        <Button type="info" disabled ghost icon="ios-cloud-upload-outline" @click="getHeaders">
           {{ $t('artifacts_upload_new_package') }}
         </Button>
         <Button style="margin-left: 10px" type="info" ghost icon="ios-cloud-outline" @click="queryCurrentPkg">
